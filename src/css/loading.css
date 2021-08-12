@@ -1,0 +1,99 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l1,
+.l2 {
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l11,
+.l12,
+.l13 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50px;
+  height: 30px;
+}
+
+.l11 {
+  animation: spin2 2s linear infinite;
+}
+.l12 {
+  animation: spin1 2s linear infinite;
+}
+.l13 {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    font-size: 100px;
+  }
+
+  25% {
+    font-size: 150px;
+  }
+  75% {
+    font-size: 200px;
+  }
+  50% {
+    font-size: 150px;
+  }
+
+  100% {
+    font-size: 100px;
+  }
+}
+@keyframes spin1 {
+  0% {
+    font-size: 150px;
+  }
+
+  25% {
+    font-size: 200px;
+  }
+  75% {
+    font-size: 150px;
+  }
+  50% {
+    font-size: 100px;
+  }
+
+  100% {
+    font-size: 150px;
+  }
+}
+@keyframes spin2 {
+  0% {
+    font-size: 200px;
+  }
+
+  25% {
+    font-size: 150px;
+  }
+  75% {
+    font-size: 100px;
+  }
+  50% {
+    font-size: 150px;
+  }
+
+  100% {
+    font-size: 200px;
+  }
+}
